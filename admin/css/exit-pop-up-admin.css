@@ -1,0 +1,55 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.exit-pop-up-use-yes-label {
+	padding-right: 1em;
+}
+
+/* Trigger settings */
+.ex3p-label {
+	width: 100px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+/* Content settings */
+.ex3p-label-image {
+	vertical-align: top;
+}
+
+.ex3p-image {
+	display: inline;
+	max-width: 248px;
+	height: auto;
+	margin-bottom: 2px;
+}
+
+.ex3p-image-hide {
+	display: none;
+}
+
+.exp3-image-box {
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+.ex3p-label-textarea {
+	vertical-align: top;
+}
+
+input[type=number].small-text.ex3p-input-numbers {
+	text-align: right;
+	padding-right: 0;
+}
+
+.ex3p-bold {
+	font-weight: bold;
+}
+
+.ex3p-ul-sec {
+	list-style: disc;
+	padding-left: 2.2em;
+	margin-top: 6px;
+}

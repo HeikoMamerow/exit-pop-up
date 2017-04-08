@@ -1,0 +1,51 @@
+.ex3p {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.ex3p-b {
+	background: #f2f2f2;
+	border: 1px solid #aaa;
+	border-radius: 6px;
+}
+
+.ex3p-form {
+	clear: left;
+	display: inline-block;
+	width: 100%;
+}
+
+.ex3p-x {
+	display: block;
+	background: #e0e0e0;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 29px;
+}
+
+.ex3p-button {
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: 10px 0;
+	display: block;
+	float: left;
+	padding: 10px 0;
+	font-size: 100%;
+}
+
+.ex3p-yes {
+	width: 70%;
+	background: #dd7314;
+	color: #fbf6df;
+	font-weight: bold;
+}
+
+.ex3p-no {
+	width: 30%;
+}

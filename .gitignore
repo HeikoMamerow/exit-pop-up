@@ -1,0 +1,5 @@
+/node_modules/
+/wpcs/
+.git/
+.idea/
+.eslintrc

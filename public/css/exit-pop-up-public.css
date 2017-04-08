@@ -1,0 +1,62 @@
+/*******************************************************************************
+Exit Pop-up CSS
+*******************************************************************************/
+.ex3p {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 10000;
+	display: none;
+}
+
+.ex3p-b {
+	max-width: 480px;
+	margin: 13vh auto 0;
+	padding: 30px;
+	box-sizing: content-box;
+}
+
+.ex3p-x {
+	float: right;
+	padding: 0;
+}
+
+.ex3p-txt {
+	clear: both;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.ex3p-lbl {
+	position: absolute;
+	clip: auto;
+	z-index: -10;
+}
+
+.ex3p-none {
+	display: none
+}
+
+.hide {
+	display: none;
+}
+
+.ex3p-l {
+	/*float: left;*/
+	margin-bottom: 20px;
+	max-width: 80px;
+	height: auto;
+}
+
+.ex3p-x:hover {
+	cursor: pointer;
+}
+
+.ex3p-in {
+	font-size: 100%;
+	padding: 10px;
+}
+

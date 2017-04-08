@@ -1,0 +1,47 @@
+.ex3p {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.ex3p-b {
+	background: #fbf6df;
+	border: 1px solid #aaa;
+	border-radius: 6px;
+}
+
+.ex3p-x {
+	display: block;
+	background: #e0e0e0;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 29px;
+}
+
+.ex3p-button {
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: auto;
+	display: block;
+}
+
+.ex3p-yes {
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 100%;
+	background: #b5d592;
+	color: #fbf6df;
+}
+
+.ex3p-no {
+	padding: 6px;
+	min-width: 30%;
+	margin-top: 10px;
+}
