@@ -35,9 +35,9 @@ This plugin sets an entry in the local storage of the browser to "remember" if t
 This section describes how to install the plugin and get it working.
 
 1. Upload `exit-pop-up.php` to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Make global configuration trough 'Settings > Exit pop-up' menu in WordPress.
-3. Edit page and apply exit pop-up this in metabox on any page you want.
+1. Activate the plugin through the `Plugins` menu in WordPress.
+1. Make global configuration trough `Settings` > `Exit pop-up` menu in WordPress.
+1. Edit page and apply _Exit pop-up_ in meta box on any page you want.
 
 == Frequently Asked Questions ==
 
@@ -45,9 +45,17 @@ Until now nobody has asked. :-)
 
 == Screenshots ==
 
-assets/screenshot-1.png
-assets/screenshot-2.png
-assets/screenshot-3.png
+![](assets/screenshot-1.png)
+
+Admin page for global configurations.
+
+![](assets/screenshot-2.png)
+
+Meta box for settings per post or page.
+
+![](assets/screenshot-3.png)
+
+Exit pop-up example.
 
 == Changelog ==
 
