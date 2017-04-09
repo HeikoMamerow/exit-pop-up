@@ -16,8 +16,8 @@ Exit pop-up pops up, if a user wants to leave the page. Leaving the page means: 
 
 Features:
 
-+ Fires ppop-up only one time.
-+ Fires not for logged-in users.
+* Fires ppop-up only one time.
+* Fires not for logged-in users.
 * Set the probability with which the pop-up should be used.
 * Set delay time after pageload until the exit pop-up is ready.
 * Pops up only on predetermined pages.
