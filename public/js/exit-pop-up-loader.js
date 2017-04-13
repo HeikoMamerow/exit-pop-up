@@ -17,10 +17,10 @@ var min;
 var randomDelay;
 var scanDir;
 var randFile;
-var public_dir_url;
+var publicDirUrl;
 
 // Check local store if not empty
-if ( 'x' !== localStorage.getItem( 'exit-pop-up-' + window.location.hostname ) ) {
+if ( 'xxxxxxxxxx' !== localStorage.getItem( 'exit-pop-up-' + window.location.hostname ) ) {
 	// Load options via object from wp_localize_script.
 	ex3pProbability = parseInt( ex3pObject.ex3pProbability, 10 );
 	ex3pPublicJs = ex3pObject.ex3pPublicJs;
@@ -52,13 +52,14 @@ if ( 'x' !== localStorage.getItem( 'exit-pop-up-' + window.location.hostname ) )
 		document.getElementsByTagName( 'head' )[ 0 ].appendChild( fileref );
 
 		// Shuffle a css variant file and load
-		public_dir_url = ex3pObject.public_dir_url;
+		publicDirUrl = ex3pObject.publicDirUrl;
 		scanDir = ex3pObject.public_scandir;
 		randFile = scanDir[ Math.floor( Math.random() * scanDir.length ) ];
 
 		fileref = document.createElement( 'link' );
 
-		fileref.setAttribute( 'href', public_dir_url + randFile );
+		fileref.setAttribute( 'href', publicDirUrl + randFile );
+		fileref.setAttribute( 'id', 'ex3p-css-variant' );
 		fileref.setAttribute( 'rel', 'stylesheet' );
 		fileref.setAttribute( 'type', 'text/css' );
 		fileref.setAttribute( 'media', 'screen' );

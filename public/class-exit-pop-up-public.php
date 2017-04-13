@@ -82,15 +82,15 @@ class Exit_Pop_Up_Public {
 		//Grab all options
 		$options = get_option( $this->plugin_name );
 
-		$public_dir_path = plugin_dir_path( __FILE__ ) . 'css/variants';
-		$public_dir_url = plugin_dir_url( __FILE__ ) . 'css/variants/';
-		$public_scandir = scandir( $public_dir_path );
-		$public_scandir_sliced = array_slice($public_scandir, 2);
+		$public_dir_path       = plugin_dir_path( __FILE__ ) . 'css/variants';
+		$public_dir_url         = plugin_dir_url( __FILE__ ) . 'css/variants/';
+		$public_scandir        = scandir( $public_dir_path );
+		$public_scandir_sliced = array_slice( $public_scandir, 2 );
 
-		$public_url     = esc_url( home_url( '/', 'https' ) );
-		$public_js      = plugin_dir_url( __FILE__ ) . 'js/exit-pop-up-public.js';
-		$public_css     = plugin_dir_url( __FILE__ ) . 'css/exit-pop-up-public.css';
-		$public_email   = __( 'E-Mail', 'exit-pop-up' );
+		$public_url   = esc_url( home_url( '/', 'https' ) );
+		$public_js    = plugin_dir_url( __FILE__ ) . 'js/exit-pop-up-public.js';
+		$public_css   = plugin_dir_url( __FILE__ ) . 'css/exit-pop-up-public.css';
+		$public_email = __( 'E-Mail', 'exit-pop-up' );
 
 		$localize_array = array(
 			'ex3pProbability' => $options['probability'],
@@ -106,7 +106,7 @@ class Exit_Pop_Up_Public {
 			'ex3p_btn_n'      => $options['btn-n'],
 			'public_img'      => $options['image'],
 			'public_scandir'  => $public_scandir_sliced,
-			'public_dir_url'  => $public_dir_url,
+			'publicDirUrl'    => $public_dir_url,
 		);
 		wp_localize_script( $this->plugin_name, 'ex3pObject', $localize_array );
 	}
