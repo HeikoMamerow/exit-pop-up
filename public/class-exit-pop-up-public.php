@@ -83,7 +83,7 @@ class Exit_Pop_Up_Public {
 		$options = get_option( $this->plugin_name );
 
 		$public_dir_path       = plugin_dir_path( __FILE__ ) . 'css/variants';
-		$public_dir_url         = plugin_dir_url( __FILE__ ) . 'css/variants/';
+		$public_dir_url        = plugin_dir_url( __FILE__ ) . 'css/variants/';
 		$public_scandir        = scandir( $public_dir_path );
 		$public_scandir_sliced = array_slice( $public_scandir, 2 );
 
@@ -93,20 +93,21 @@ class Exit_Pop_Up_Public {
 		$public_email = __( 'E-Mail', 'exit-pop-up' );
 
 		$localize_array = array(
-			'ex3pProbability' => $options['probability'],
-			'ex3pDelay'       => $options['delay'],
-			'ex3pPublicJs'    => $public_js,
-			'ex3pPublicCss'   => $public_css,
-			'ex3pClose'       => $options['close'],
-			'ex3p_text'       => $options['text'],
-			'public_url'      => $public_url,
-			'ex3p_action'     => $options['action'],
-			'public_email'    => $public_email,
-			'ex3p_btn_y'      => $options['btn-y'],
-			'ex3p_btn_n'      => $options['btn-n'],
-			'public_img'      => $options['image'],
-			'public_scandir'  => $public_scandir_sliced,
-			'publicDirUrl'    => $public_dir_url,
+			'ex3pProbability'  => $options['probability'],
+			'ex3pDelay'        => $options['delay'],
+			'ex3pPublicJs'     => $public_js,
+			'ex3pPublicCss'    => $public_css,
+			'ex3pClose'        => $options['close'],
+			'ex3p_text'        => $options['text'],
+			'ex3p_text_submit' => $options['text-submit'],
+			'public_url'       => $public_url,
+			'ex3p_action'      => $options['action'],
+			'public_email'     => $public_email,
+			'ex3p_btn_y'       => $options['btn-y'],
+			'ex3p_btn_n'       => $options['btn-n'],
+			'public_img'       => $options['image'],
+			'public_scandir'   => $public_scandir_sliced,
+			'publicDirUrl'     => $public_dir_url,
 		);
 		wp_localize_script( $this->plugin_name, 'ex3pObject', $localize_array );
 	}

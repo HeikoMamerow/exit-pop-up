@@ -34,13 +34,7 @@
 			<label class="ex3p-label"
 				   for="ex3p-probability"><?php _e( 'Probability', $this->plugin_name ); ?>
 				:</label>
-			<input id="ex3p-probability" class="ex3p-input ex3p-input-numbers
-			small-text"
-				   type="number"
-				   name="<?php echo $this->plugin_name; ?>[probability]" min="0"
-				   max="100" step="1" size="3"
-				   value="<?php echo $options['probability'];
-			       ?>"> <?php _e( 'in %', $this->plugin_name ); ?>
+			<input id="ex3p-probability" class="ex3p-input ex3p-input-numbers small-text" type="number" name="<?php echo $this->plugin_name; ?>[probability]" min="0" max="100" step="1" size="3" value="<?php echo $options['probability']; ?>"> <?php _e( 'in %', $this->plugin_name ); ?>
 			<br>
 			<label class="ex3p-label"
 				   for="ex3p-delay"><?php _e( 'Delay', $this->plugin_name ); ?>
@@ -84,6 +78,13 @@
 			<textarea id="ex3p-txt" class="ex3p-input ex3p-textarea"
 					  name="<?php echo $this->plugin_name; ?>[text]"><?php
 				echo $options['text']; ?></textarea>
+			<br>
+			<label class="ex3p-label ex3p-label-textarea"
+				   for="ex3p-txt"><?php _e( 'Text after submit', $this->plugin_name ); ?>
+				:</label>
+			<textarea id="ex3p-txt" class="ex3p-input ex3p-textarea"
+					  name="<?php echo $this->plugin_name; ?>[text-submit]"><?php
+				echo $options['text-submit']; ?></textarea>
 			<br>
 			<label class="ex3p-label"
 				   for="ex3p-btn-y"><?php _e( 'Yes Button', $this->plugin_name ); ?>
