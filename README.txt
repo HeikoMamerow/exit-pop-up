@@ -18,7 +18,6 @@ Features:
 
 - Fires ppop-up only one time.
 - Fires only for not logged-in users.
--
 - Tracking API
   - Design variant
   - Time of delay
