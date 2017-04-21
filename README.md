@@ -3,11 +3,14 @@ WordPress Plugin: Display modal window on top of the page before user leave.
 
 ## Description
 
-_Exit pop-up_ pops up, if a user wants to leave the page. Leaving the page means: moving the mouse to the top of the browser window.
+_Exit pop-up_ pops up, if:
+1. User leave the page. Leaving the page means: moving the mouse to the top of the browser window.
+2. User click on an Link to an external website.
 
 Features:
 
 - Fires ppop-up only one time.
+  - Remember action in local storage from the browser.
 - Fires only for not logged-in users.
 - Tracking API
   - Design variant
