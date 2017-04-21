@@ -1,4 +1,4 @@
-/* eslint-disable no-undef,valid-jsdoc */
+/* eslint-disable no-undef */
 /**
  * Loader script
  *
@@ -27,6 +27,8 @@ ex3pPublicCss = ex3pObject.ex3pPublicCss;
 
 /**
  * Calculate delay for pop-up loading.
+ *
+ * @return {Number} Given delay time * 1000 + random delay
  */
 function ex3pDelayFn() {
 	// Load option via object from wp_localize_script.
@@ -46,7 +48,7 @@ function ex3pDelayFn() {
 /**
  * Load the js file.
  *
- * @returns {string}
+ * @returns {string} Injects the js file.
  */
 function loadJs() {
 	// Load js file
@@ -61,7 +63,7 @@ function loadJs() {
 /**
  * Load the basic css files.
  *
- * @returns {string}
+ * @returns {string} Injects the css file.
  */
 function loadCssBasic() {
 	// Load basic css file
@@ -78,7 +80,7 @@ function loadCssBasic() {
 /**
  * Load the css variant.
  *
- * @returns {string}
+ * @returns {string} Injects the shuffled css variant.
  */
 function loadCssVariant() {
 	// Shuffle and load a css variant file
@@ -122,5 +124,4 @@ if ( 'x' !== localStorage.getItem( 'exit-pop-up-' + window.location.hostname ) )
 		} );
 	}
 }
-
 

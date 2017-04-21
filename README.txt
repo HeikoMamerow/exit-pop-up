@@ -3,7 +3,7 @@ Contributors: Heiko_Mamerow
 Donate link: https://heikomamerow.de
 Tags: exit popup, modal popup
 Requires at least: 4.7
-Tested up to: 4.7.3
+Tested up to: 4.7.4
 Stable tag: 4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,9 +14,13 @@ Display modal window on top of the page before user leave.
 
 Exit pop-up pops up, if:
 1. User leave the page. Leaving the page means: moving the mouse to the top of the browser window.
+or
 2. User click on an Link to an external website.
 
-Features:
+It comes with an form to collect email address from the user.
+
+
+== Features ==
 
 - Fires ppop-up only one time.
   - Remember action in local storage from the browser.
@@ -73,6 +77,9 @@ Meta box for settings per post or page.
 Exit pop-up example.
 
 == Changelog ==
+
+= 1.2.0 =
+- Pop-up also for external Links.
 
 = 1.1.0 =
 - Tracking possible also when canceling

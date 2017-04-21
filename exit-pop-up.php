@@ -7,9 +7,9 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Exit Pop-up
- * Plugin URI:        https://heikomamerow.de
+ * Plugin URI:        https://github.com/HeikoMamerow/exit-pop-up
  * Description:       Display modal window on top of the page before user leave.
- * Version:           1.0.0
+ * Version:           1.2.0
  * Author:            Heiko Mamerow
  * Author URI:        https://heikomamerow.de
  * License:           GPL-2.0+

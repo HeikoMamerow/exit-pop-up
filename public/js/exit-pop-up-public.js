@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Variables
 var ex3pIn;
 var ex3p;
@@ -32,7 +33,8 @@ function form() {
 	// Get form text and markup.
 	document.getElementById( 'ex3p-hide' ).textContent = ex3pClose;
 
-	// Multiline strings with + are slow. Better use `. But i can't for IE9. ;-(
+	// Multiline strings with + are slow.
+	// Better use `. But i can't for IE9. ;-(
 	document.getElementById( 'ex3p' ).innerHTML = String( '<div id="ex3p-b" class="ex3p-b" title="">'
 			+ '<button id="ex3p-x" class="ex3p-x" type="button" title="' + ex3pClose + '">X</button>'
 			+ '<img alt="" src="' + ex3pObject.public_img + '" class="ex3p-l">'
@@ -107,7 +109,7 @@ function ex3pClick() {
 	var cssVariant;
 
 	// Get date and time.
-	document.getElementById( 'ex3p-delay' ).value = ex3pDelayFn() / 1000 + ' sec.';
+	document.getElementById( 'ex3p-delay' ).value = ( ex3pDelayFn() / 1000 ) + ' sec.';
 
 	// Get css variant.
 	cssVariantHref = document.getElementById( 'ex3p-css-variant' ).getAttribute( 'href' );
@@ -167,6 +169,8 @@ function submitOutOfBox() {
 
 /**
  * Close pop-up.
+ *
+ * @param {e} e is short var reference for event object.
  */
 function triggerClose( e ) {
 	var trid = e.target.id;
